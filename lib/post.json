@@ -1,0 +1,154 @@
+{
+  "post": {
+    "perfil": {
+      "foto_banner": "img/banner_img.jpg",
+      "foto_perfil": "img/minha-foto.jpg",
+      "nome": "Jose Henrique Ferreira",
+      "titulo": "Engenharia de Software",
+      "descricao": [
+        "Sou um desenvolvedor apaixonado por tecnologias modernas. Estou cursando Engenharia de Software na Faculdade UniCesumar. Tenho cursos online na Alura, Udemy, Danki Code, e outros, nas áreas de desenvolvimento front-end e back-end. Sou uma pessoa motivada e dedicada.",
+        "Minha abordagem é focada em entregar código limpo, funcional e escalável, sempre priorizando a usabilidade e a eficiência. Estou constantemente me atualizando com as melhores práticas do mercado e novas ferramentas para oferecer resultados de alta qualidade.",
+        "Tenho curso técnico de manutenção de computadores e notebooks. Trabalhei na Secretaria de Educação por quatro anos. Sou motivador, dedicado e correto, gosto de trabalhar em equipe. Acredito que a tecnologia pode transformar ideias em realidade digital."
+      ]
+    },
+    "habilidades": [
+      {
+        "slug": "html",
+        "nome": "HTML",
+        "imagem": "img/html.png",
+        "descricao": "Linguagem de marcação de hipertexto usada para estruturar e exibir conteúdo na web.",
+        "link": "https://developer.mozilla.org/pt-BR/docs/Web/HTML"
+      },
+      {
+        "slug": "css",
+        "nome": "CSS3",
+        "imagem": "img/css.png",
+        "descricao": "Linguagem de estilo para a apresentação de documentos HTML e XML.",
+        "link": "https://developer.mozilla.org/pt-BR/docs/Web/CSS"
+      },
+      {
+        "slug": "javascript",
+        "nome": "JavaScript",
+        "imagem": "img/javascript.png",
+        "descricao": "Linguagem de programação de alto niível usada para criar interatividade e dinamismo em websites.",
+        "link": "https://developer.mozilla.org/pt-BR/docs/Web/JavaScript"
+      },
+      {
+        "slug": "PHP",
+        "nome": "PHP",
+        "imagem": "img/php.png",
+        "descricao": "Linguagem de programação de lado do servidor usada para desenvolvimento de aplicativos web.",
+        "link": "https://www.php.net/"
+      },
+      {
+        "slug": "laravel",
+        "nome": "Laravel",
+        "imagem": "img/laravel.png",
+        "descricao": "Framework PHP para desenvolvimento de aplicativos web.",
+        "link": "https://laravel.com/"
+      },
+      {
+        "slug": "react",
+        "nome": "React",
+        "imagem": "img/react.png",
+        "descricao": "Biblioteca JavaScript para construção de interfaces de usuário.",
+        "link": "https://react.dev/"
+      },
+      {
+        "slug": "mysql",
+        "nome": "MySQL",
+        "imagem": "img/mysql.png",
+        "descricao": "Sistema de gerenciamento de banco de dados relacional.",
+        "link": "https://www.mysql.com/"
+      },
+      {
+        "slug": "git",
+        "nome": "Git",
+        "imagem": "img/git.png",
+        "descricao": "Sistema de controle de versões distribuído.",
+        "link": "https://git-scm.com/"
+      },
+      {
+        "slug": "linguagem-c",
+        "nome": "Linguagem C",
+        "imagem": "img/c.png",
+        "descricao": "Linguagem de programação de alto niível usada para desenvolvimento de software.",
+        "link": "https://pt.wikipedia.org/wiki/C_(linguagem_de_programa%C3%A7%C3%A3o)"
+      }
+    ],
+    "projetos": [
+      {
+        "id": 1,
+        "slug": "lista-de-livros",
+        "titulo": "Lista de Livros",
+        "descricao": "Projeto para gerenciamento de livros. Criado com React.js e Redux.",
+        "imagem": "img/books-firebase.png",
+        "link": "https://books-firebase-cb3e6.web.app"
+      },
+      {
+        "id": 2,
+        "slug": "lista-de-compras",
+        "titulo": "Lista de Compras",
+        "descricao": "Projeto criado para lista de compras com armazenamento no LocalStorage. Desenvolvido em React.js.",
+        "imagem": "img/leyout llista.png",
+        "link": "https://lista-de-compra-78a24.web.app/"
+      },
+      {
+        "id": 3,
+        "slug": "calcular-imc",
+        "titulo": "Calcular IMC",
+        "descricao": "Projeto criado para calcular IMC com armazenamento local. Desenvolvido em JavaScript, HTML e CSS.",
+        "imagem": "img/imc.jpg",
+        "link": "https://jhenryque.github.io/calcularoda_imc/"
+      },
+      {
+        "id": 4,
+        "slug": "agenda-digital",
+        "titulo": "Agenda Digital",
+        "descricao": "Aplicação para anotações e lembretes, com armazenamento no LocalStorage. Criado com React.ts.",
+        "imagem": "img/agenda-digital.png",
+        "link": "https://projetos-agenda-digital.vercel.app/"
+      },
+      {
+        "id": 5,
+        "slug": "landing-page-dr-online",
+        "titulo": "Landing Page Dr.Online",
+        "descricao": "Landing Page desenvolvida em PHP (Laravel) apenas o front-end, hospedada no GitHub.",
+        "imagem": "img/doctor-oline.png",
+        "link": "https://github.com/JHenryque/landy-page-doctor"
+      },
+      {
+        "id": 6,
+        "slug": "cronometrar",
+        "titulo": "Cronometrar",
+        "descricao": "Aplicação para cronometrar tarefas e atividades, armazenando dados localmente. Criado com React.ts.",
+        "imagem": "img/cronomentro.png",
+        "link": "https://cronometrar-depert.vercel.app/"
+      },
+      {
+        "id": 7,
+        "slug": "recursos-humanos",
+        "titulo": "Recursos Humanos",
+        "descricao": "Sistema para controle de funcionários e departamentos, feito em PHP Laravel com MySQL.",
+        "imagem": "img/rhmangnt.png",
+        "link": "https://github.com/JHenryque/projeto-rh_mangnt"
+      },
+      {
+        "id": 8,
+        "slug": "bytebank",
+        "titulo": "Bytebank",
+        "descricao": "Projeto para gerenciamento de valores de moeda. Criado com JavaScript, HTML e CSS.",
+        "imagem": "img/bytebank.png",
+        "link": "https://jhenryque.github.io/Bytebank/"
+      }
+    ],
+    "contato": {
+      "email": "josehenriquedevops@gmail.com",
+      "redes_sociais": {
+        "linkedin": "https://www.linkedin.com/in/henryque-ferreira-384472259/",
+        "github": "https://github.com/JHenryque",
+        "instagram": "https://www.instagram.com/henryque_mtb/"
+      }
+    }
+  }
+}
