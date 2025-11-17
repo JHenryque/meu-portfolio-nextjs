@@ -1,5 +1,5 @@
-import Banner from "@/components/Banner";
+import LayoutApp from "@/LayoutApp";
 
 export default function Home() {
-  return <Banner />;
+  return <LayoutApp />;
 }

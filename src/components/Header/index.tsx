@@ -1,27 +1,14 @@
+import Link from "next/link";
+
 export default function Header() {
   return (
     <header className="cabecalho">
       <div>
-        <a className="logon-marca" href="#">
+        <Link className="logon-marca" href="/">
           <h1>Meu Portfólio</h1>
-        </a>
+        </Link>
       </div>
-      <nav className="menu">
-        <ul>
-          <li>
-            <a href="#sobre">Sobre</a>
-          </li>
-          <li>
-            <a href="#habilidades">Habilidades</a>
-          </li>
-          <li>
-            <a href="#projetos">Projetos</a>
-          </li>
-          <li>
-            <a href="#contato">Contato</a>
-          </li>
-        </ul>
-      </nav>
+
       {/* <!-- Hamburguer --> */}
       <div className="hamburguer active_bars" id="menu-hamburguer">
         <i className="fa-solid fa-bars"></i>
@@ -45,6 +32,25 @@ export default function Header() {
           <a href="#contato">
             <li>Contato</li>
           </a>
+        </ul>
+      </nav>
+      <nav className="menu">
+        <ul>
+          <li>
+            <a href="#sobre">Sobre</a>
+          </li>
+          <li>
+            <a href="#habilidades">Habilidades</a>
+          </li>
+          <li>
+            <a href="#projetos">Projetos</a>
+          </li>
+          <li>
+            <a href="#contato">Contato</a>
+          </li>
+          <li>
+            <Link href="/habilidade/criar">Habildade</Link>
+          </li>
         </ul>
       </nav>
     </header>
