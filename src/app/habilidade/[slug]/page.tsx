@@ -10,6 +10,7 @@ export const metadata: Metadata = {
 
 export default async function Habilidade({ params }: HabilidadeProps) {
   const { slug } = await params;
+
   return (
     <div>
       <h1>Detalhes da habilidade {slug}</h1>

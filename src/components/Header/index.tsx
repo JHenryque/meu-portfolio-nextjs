@@ -48,9 +48,6 @@ export default function Header() {
           <li>
             <a href="#contato">Contato</a>
           </li>
-          <li>
-            <Link href="/habilidade/criar">Habildade</Link>
-          </li>
         </ul>
       </nav>
     </header>
