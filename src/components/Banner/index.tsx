@@ -1,6 +1,8 @@
+import { Github, Instagram, Linkedin, Mail, Phone } from "lucide-react";
 import Image from "next/image";
 import imageBanner from "../../../public/img/banner.gif";
 import "./stylles.css";
+import MoveX from "../MoveX";
 
 export default function Banner() {
   return (
@@ -9,21 +11,25 @@ export default function Banner() {
         <div className="container-flex">
           <div className="titleContacto">
             <h2 data-aos="fade-right" data-aos-duration="1000">
-              Olá sou Jose Henrique Ferreira
+              Olá, sou Jose Henrique Ferreira
             </h2>
 
-            <p>Engenheiro de Software</p>
+            <p className="move-right">
+              Engenheiro de Software | Desenvolvedor Web
+            </p>
+            {/* <p>
+              <MoveX />
+            </p> */}
             <button
               className="btn-contato"
               data-aos="fade-right"
               data-aos-duration="1000"
             >
-              <a href="#contato">
-                Contato <i className="fa-solid fa-phone"></i>
-              </a>
+              <a href="#contato">Contato</a>
+              <Phone className="cel-hove" />
             </button>
             <address>
-              <ul>
+              <ul className="redes-sociais">
                 <li
                   className="linkedin"
                   data-aos="fade-zoom-in"
@@ -36,7 +42,7 @@ export default function Banner() {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <i id="linkedin" className="fa-brands fa-linkedin"></i>
+                    <Linkedin />
                   </a>
                 </li>
                 <li
@@ -51,7 +57,7 @@ export default function Banner() {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <i id="github" className="fa-brands fa-square-github"></i>
+                    <Github />
                   </a>
                 </li>
                 <li
@@ -66,14 +72,13 @@ export default function Banner() {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <i
-                      id="instagram"
-                      className="fa-brands fa-square-instagram"
-                    ></i>
+                    <Instagram />
                   </a>
                 </li>
               </ul>
+
               <span
+                className="meu_email"
                 data-aos="fade-zoom-in"
                 data-aos-easing="ease-in-back"
                 data-aos-delay="900"
@@ -94,7 +99,11 @@ export default function Banner() {
           </div>
           <div className="divisao"></div>
         </div>
-        <Image src={imageBanner} alt="Minha Foto Banner" />
+        <Image
+          className="image_gif"
+          src={imageBanner}
+          alt="Minha Foto Banner"
+        />
       </section>
     </>
   );
