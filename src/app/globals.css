@@ -16,28 +16,3 @@ body {
   background-size: contain;
   min-height: 140dvh;
 }
-
-.cabecalho {
-  display: flex;
-  width: 100%;
-  top: 0;
-  color: #0a0a0a;
-  justify-content: space-between;
-  padding: 2rem 8%;
-  box-shadow: 10rem 10rem 15rem rgba(0, 0, 0, 0.5),
-    -10rem -10rem 15rem rgba(0, 0, 0, 0.5);
-}
-
-.menu-mobile {
-  display: none;
-}
-
-.menu ul {
-  display: flex;
-  gap: 2rem;
-  list-style: none;
-  margin: 0;
-  padding: 0 20px;
-  color: #0a0a0a;
-  z-index: 1;
-}

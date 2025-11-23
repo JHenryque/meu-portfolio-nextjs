@@ -1,11 +1,31 @@
+"use client";
+
 import Link from "next/link";
 
+import "./stylles.css";
+import { useEffect, useState } from "react";
+
 export default function Header() {
+  const [isFixed, setIsFixed] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 19) {
+        setIsFixed(true);
+        console.log(window.scrollY);
+      } else {
+        setIsFixed(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
   return (
-    <header className="cabecalho">
+    <header className={isFixed ? "cabecalho fixed" : "cabecalho"}>
       <div>
         <Link className="logon-marca" href="/">
-          <h1>Meu Portfólio</h1>
+          <h1>Dev.Ecommerce</h1>
         </Link>
       </div>
 
@@ -20,6 +40,9 @@ export default function Header() {
       {/* <!-- Menu Mobile --> */}
       <nav className="menu-mobile">
         <ul>
+          <Link className="logon-marca" href="/">
+            <li>Home</li>
+          </Link>
           <a href="#sobre">
             <li>Sobre</li>
           </a>
@@ -36,6 +59,9 @@ export default function Header() {
       </nav>
       <nav className="menu">
         <ul>
+          <Link className="logon-marca" href="/">
+            <li>Home</li>
+          </Link>
           <li>
             <a href="#sobre">Sobre</a>
           </li>
