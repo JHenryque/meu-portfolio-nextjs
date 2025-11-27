@@ -1,4 +1,5 @@
 import Image from "next/image";
+import foto from "../../../public/img/minha-foto.jpg";
 
 export default function SobreMi() {
   return (
@@ -7,6 +8,7 @@ export default function SobreMi() {
       data-aos="zoom-in-up"
       data-aos-delay="200"
       data-aos-duration="1000"
+      id="sobre"
     >
       <div className="title_page" id="sobre">
         <h2 data-aos="fade-up" data-aos-duration="1000">
@@ -16,7 +18,7 @@ export default function SobreMi() {
       <div className="banner">
         <div>
           <div className="minha-foto">
-            <Image src="img/minha-foto.jpg" alt="Minha Foto" />
+            <Image src={foto} alt="Minha Foto" />
           </div>
         </div>
         <div id="#sobre" className="dados-pessoais">
@@ -55,6 +57,7 @@ export default function SobreMi() {
           </ul>
         </div>
       </div>
+      <br />
     </section>
   );
 }
