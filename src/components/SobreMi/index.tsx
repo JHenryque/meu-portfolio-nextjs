@@ -18,7 +18,7 @@ export default function SobreMi() {
       <div className="banner">
         <div>
           <div className="minha-foto">
-            <Image src={foto} alt="Minha Foto" />
+            <Image src={foto} width={200} height={200} alt="Minha Foto" />
           </div>
         </div>
         <div id="#sobre" className="dados-pessoais">

@@ -8,19 +8,19 @@ import { useEffect, useState } from "react";
 export default function Header() {
   const [isFixed, setIsFixed] = useState(false);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 19) {
-        setIsFixed(true);
-        console.log(window.scrollY);
-      } else {
-        setIsFixed(false);
-      }
-    };
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     if (window.scrollY > 19) {
+  //       setIsFixed(true);
+  //       console.log(window.scrollY);
+  //     } else {
+  //       setIsFixed(false);
+  //     }
+  //   };
 
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  //   window.addEventListener("scroll", handleScroll);
+  //   return () => window.removeEventListener("scroll", handleScroll);
+  // }, []);
   return (
     <header className={isFixed ? "cabecalho fixed" : "cabecalho"}>
       <div>
