@@ -1,7 +1,12 @@
 import Link from "next/link";
 import "./stylles.css";
+import { JsonPostRepository } from "@/repositories/json.post.repository";
 
-export default function Habilidade() {
+export default async function Habilidade() {
+  const habil = await JsonPostRepository();
+
+  console.log(habil.findAllHabilidades());
+
   return (
     <section className="habilidades">
       <div className="title_page" id="habilidades">
