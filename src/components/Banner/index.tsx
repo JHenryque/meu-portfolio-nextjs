@@ -15,20 +15,20 @@ export default function Banner() {
             </h2>
 
             <p className="move-right">
-              Engenheiro de Software | Desenvolvedor Web
+              Bacharel Engenheiro de Software | Desenvolvedor Web
             </p>
             {/* <p>
               <MoveX />
             </p> */}
-            <button
-              className="btn-contato"
-              data-aos="fade-right"
-              data-aos-duration="1000"
-            >
-              <a href="#contato">Contato</a>
-              <Phone className="cel-hove" />
-            </button>
             <address>
+              <button
+                className="btn-contato"
+                data-aos="fade-right"
+                data-aos-duration="1000"
+              >
+                <a href="#contato">Contato</a>
+                <Phone className="cel-hove" />
+              </button>
               <ul className="redes-sociais">
                 <li
                   className="linkedin"

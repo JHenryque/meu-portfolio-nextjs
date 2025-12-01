@@ -2,10 +2,8 @@ import Link from "next/link";
 import "./stylles.css";
 import { JsonPostRepository } from "@/repositories/json.post.repository";
 
-export default async function Habilidade() {
-  const habil = await JsonPostRepository();
-
-  console.log(habil.findAllHabilidades());
+export default function Habilidade() {
+  const habil = new JsonPostRepository().findAllHabilidades();
 
   return (
     <section className="habilidades">
@@ -15,7 +13,16 @@ export default async function Habilidade() {
         </h2>
       </div>
       <ul>
-        <li
+        {habil.then((data) =>
+          data.map((habilidade) => (
+            <li key={habilidade.slug}>
+              <Link href={`/habilidade/${habilidade.slug}`}>
+                {habilidade.nome}
+              </Link>
+            </li>
+          ))
+        )}
+        {/* <li
           className="fullstack"
           data-aos="fade-right"
           data-aos-offset="300"
@@ -62,7 +69,7 @@ export default async function Habilidade() {
           data-aos-offset="200"
         >
           Linguangem C
-        </li>
+        </li> */}
       </ul>
     </section>
   );

@@ -15,63 +15,54 @@
       {
         "slug": "html",
         "nome": "HTML",
-        "imagem": "img/html.png",
         "descricao": "Linguagem de marcação de hipertexto usada para estruturar e exibir conteúdo na web.",
         "link": "https://developer.mozilla.org/pt-BR/docs/Web/HTML"
       },
       {
         "slug": "css",
         "nome": "CSS3",
-        "imagem": "img/css.png",
         "descricao": "Linguagem de estilo para a apresentação de documentos HTML e XML.",
         "link": "https://developer.mozilla.org/pt-BR/docs/Web/CSS"
       },
       {
         "slug": "javascript",
         "nome": "JavaScript",
-        "imagem": "img/javascript.png",
         "descricao": "Linguagem de programação de alto niível usada para criar interatividade e dinamismo em websites.",
         "link": "https://developer.mozilla.org/pt-BR/docs/Web/JavaScript"
       },
       {
         "slug": "PHP",
         "nome": "PHP",
-        "imagem": "img/php.png",
         "descricao": "Linguagem de programação de lado do servidor usada para desenvolvimento de aplicativos web.",
         "link": "https://www.php.net/"
       },
       {
         "slug": "laravel",
         "nome": "Laravel",
-        "imagem": "img/laravel.png",
         "descricao": "Framework PHP para desenvolvimento de aplicativos web.",
         "link": "https://laravel.com/"
       },
       {
         "slug": "react",
         "nome": "React",
-        "imagem": "img/react.png",
         "descricao": "Biblioteca JavaScript para construção de interfaces de usuário.",
         "link": "https://react.dev/"
       },
       {
         "slug": "mysql",
         "nome": "MySQL",
-        "imagem": "img/mysql.png",
         "descricao": "Sistema de gerenciamento de banco de dados relacional.",
         "link": "https://www.mysql.com/"
       },
       {
         "slug": "git",
         "nome": "Git",
-        "imagem": "img/git.png",
         "descricao": "Sistema de controle de versões distribuído.",
         "link": "https://git-scm.com/"
       },
       {
         "slug": "linguagem-c",
         "nome": "Linguagem C",
-        "imagem": "img/c.png",
         "descricao": "Linguagem de programação de alto niível usada para desenvolvimento de software.",
         "link": "https://pt.wikipedia.org/wiki/C_(linguagem_de_programa%C3%A7%C3%A3o)"
       }

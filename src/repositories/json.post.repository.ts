@@ -17,13 +17,15 @@ export class JsonPostRepository implements PostRepository {
   private async responsePosts() {
     const jsonContent = await readFile(JSON_POSTS_FILE_PATH, "utf-8");
     const parsedJson = JSON.parse(jsonContent);
-    const { posts } = parsedJson;
-    return posts;
+
+    //console.log(parsedJson.post);
+
+    const { post } = parsedJson;
+    return post;
   }
 
   async findAllHabilidades(): Promise<PostHabilidadesDto[]> {
     const posts = await this.responsePosts();
-
     return posts.habilidades;
   }
 

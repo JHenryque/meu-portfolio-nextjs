@@ -16,7 +16,7 @@
   font-size: clamp(1.5rem, 2.5vw, 2.5rem);
   font-weight: 700;
   color: #003140;
-  margin-bottom: 1rem;
+  line-height: 2rem;
 }
 
 .titleContacto p {
@@ -94,6 +94,12 @@
   box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+address {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .divisao {
   background-color: #003140;
   width: 100%;
@@ -101,6 +107,7 @@
   position: absolute;
   bottom: 0;
 }
+
 /* Keyframes da animação */
 @keyframes slideRight {
   0% {

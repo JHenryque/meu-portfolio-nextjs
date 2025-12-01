@@ -7,7 +7,6 @@
   padding: 2rem 8%;
   box-shadow: 10rem 10rem 15rem rgba(0, 0, 0, 0.5),
     -10rem -10rem 15rem rgba(0, 0, 0, 0.5);
-  position: fixed;
 }
 
 .menu-mobile {
@@ -26,4 +25,10 @@
 
 .fixed {
   position: fixed;
+  color: blueviolet;
+  background-color: #0a0a0ac5;
+  z-index: 999;
+  & .menu ul {
+    color: rgb(196, 192, 199);
+  }
 }
