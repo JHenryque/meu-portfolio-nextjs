@@ -10,6 +10,7 @@ export const metadata: Metadata = {
 
 export default async function Habilidade({ params }: HabilidadeProps) {
   const { slug } = await params;
+  await new Promise((resolve) => setTimeout(resolve, 1000));
 
   return (
     <div>

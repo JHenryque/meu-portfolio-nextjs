@@ -1,8 +1,7 @@
-import { Github, Instagram, Linkedin, Mail, Phone } from "lucide-react";
+import { Github, Instagram, Linkedin, Phone } from "lucide-react";
 import Image from "next/image";
 import imageBanner from "../../../public/img/banner.gif";
 import "./stylles.css";
-import MoveX from "../MoveX";
 
 export default function Banner() {
   return (
@@ -17,9 +16,6 @@ export default function Banner() {
             <p className="move-right">
               Bacharel Engenheiro de Software | Desenvolvedor Web
             </p>
-            {/* <p>
-              <MoveX />
-            </p> */}
             <address>
               <button
                 className="btn-contato"
@@ -94,9 +90,7 @@ export default function Banner() {
             data-aos-delay="300"
             data-aos-duration="1000"
             className="img-foto"
-          >
-            {/* <Image src={imgBane} alt="Minha Foto Banner" /> */}
-          </div>
+          ></div>
           <div className="divisao"></div>
         </div>
         <Image
