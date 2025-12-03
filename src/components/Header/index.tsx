@@ -24,7 +24,9 @@ export default function Header() {
     <header className={isFixed ? "cabecalho fixed" : "cabecalho"}>
       <div>
         <Link className="logon-marca" href="/">
-          <h1>Dev.JHF</h1>
+          <h1>
+            Dev.<b>JHF</b>
+          </h1>
         </Link>
       </div>
 
@@ -39,7 +41,7 @@ export default function Header() {
       {/* <!-- Menu Mobile --> */}
       <nav className="menu-mobile">
         <ul>
-          <Link className="logon-marca" href="/">
+          <Link href="/">
             <li>Home</li>
           </Link>
           <a href="#sobre">
@@ -58,7 +60,7 @@ export default function Header() {
       </nav>
       <nav className="menu">
         <ul>
-          <Link className="logon-marca" href="/">
+          <Link href="/">
             <li>Home</li>
           </Link>
           <li>

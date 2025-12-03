@@ -1,3 +1,96 @@
 .habilidades {
-  min-height: 50rem;
+  width: 100%;
+  min-height: 20rem;
+  position: relative;
+  background: linear-gradient(
+    180deg,
+    var(--gray-700),
+    var(--gray-600) 60%,
+    var(--gray-500) 80%,
+    var(--gray-400),
+    var(--gray-300),
+    var(--gray-200)
+  );
+}
+
+.seta-baixo {
+  color: var(--text-color);
+  width: 3rem;
+  height: 3rem;
+  margin-bottom: 2rem;
+  background-color: #e62e2e;
+  padding: 0.5rem;
+  color: aliceblue;
+  border-radius: 50%;
+  position: absolute;
+  top: -25px;
+  left: 50%;
+}
+
+.title_page h2 {
+  font-size: clamp(1.5rem, 2.5vw, 2.5rem);
+  font-weight: 700;
+  color: var(--text-color);
+  line-height: 2rem;
+  margin-bottom: 1rem;
+}
+
+.habilidades ul {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 3rem;
+  position: absolute;
+  top: 70px;
+  left: 30%;
+}
+
+.habilidades ul li {
+  background: var(--container-bg);
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-size: 1.2rem;
+  color: var(--text-color);
+  font-weight: 500;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.habilidades ul li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.habilidades ul li {
+  width: 100%;
+  text-align: center;
+}
+.habilidades ul {
+  max-width: 600px;
+  margin: 0 auto;
+}
+.habilidades {
+  padding: 4rem 1rem;
+}
+.habilidades ul li {
+  width: auto;
+}
+.habilidades ul li {
+  width: auto;
+}
+
+@media (max-width: 768px) {
+  .habilidades ul {
+    gap: 1rem;
+  }
+  .habilidades ul li {
+    font-size: 1rem;
+    padding: 0.8rem 1.5rem;
+  }
+}
+@media (max-width: 480px) {
+  .habilidades ul {
+    flex-direction: column;
+    align-items: center;
+  }
 }

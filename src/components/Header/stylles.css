@@ -1,12 +1,21 @@
 .cabecalho {
   display: flex;
   width: 100%;
-  top: 0;
   color: #0a0a0a;
   justify-content: space-between;
+  align-items: center;
   padding: 2rem 8%;
-  box-shadow: 10rem 10rem 15rem rgba(0, 0, 0, 0.5),
-    -10rem -10rem 15rem rgba(0, 0, 0, 0.5);
+}
+
+.logon-marca h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #03153d;
+  cursor: pointer;
+}
+
+.logon-marca h1 b {
+  color: #003140;
 }
 
 .menu-mobile {
@@ -23,12 +32,33 @@
   z-index: 1;
 }
 
+.menu ul li {
+  cursor: pointer;
+  font-weight: 500;
+  transition: color 0.3s;
+  font-size: 1.2rem;
+}
+
+.menu ul li:hover {
+  color: #003140;
+  font-weight: 800;
+  transition: color 0.6s;
+}
 .fixed {
   position: fixed;
-  color: blueviolet;
-  background-color: #0a0a0ac5;
+  background-color: #ffffffc5;
+  box-shadow: inset 0px 0px 15px #0000001a;
   z-index: 999;
   & .menu ul {
-    color: rgb(196, 192, 199);
+    color: rgb(46, 46, 46);
+  }
+}
+
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+  .menu-mobile {
+    display: block;
   }
 }

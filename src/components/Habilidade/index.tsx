@@ -6,12 +6,8 @@ export default function Habilidade() {
   const habil = new JsonPostRepository().findAllHabilidades();
 
   return (
-    <section className="habilidades">
-      <div className="title_page" id="habilidades">
-        <h2 data-aos="fade-down" data-aos-duration="1000">
-          Habilidades <i className="fa-solid fa-code"></i>
-        </h2>
-      </div>
+    <section className="habilidades" id="habilidades">
+      {/* <ArrowBigDownDash className="seta-baixo" /> */}
       <ul>
         {habil.then((data) =>
           data.map((habilidade) => (
