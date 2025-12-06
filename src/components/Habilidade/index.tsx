@@ -1,72 +1,40 @@
-import Link from "next/link";
 import "./stylles.css";
-import { JsonPostRepository } from "@/repositories/json.post.repository";
+//import { JsonPostRepository } from "@/repositories/json.post.repository";
+import CardHabilidade from "../CardHabilidade";
 
 export default function Habilidade() {
-  const habil = new JsonPostRepository().findAllHabilidades();
+  //const habil = new JsonPostRepository().findAllHabilidades();
+
+  // const containerRef = useRef<HTMLDivElement>(null);
+  // const speed = 0.5; // Velocidade do movimento
+
+  // useEffect(() => {
+  //   const container = containerRef.current;
+  //   if (!container) return;
+
+  //   let x = 0;
+
+  //   const move = () => {
+  //     "use client";
+  //     x += speed;
+  //     container.style.transform = `translateX(${x}px)`;
+
+  //     // Quando passar a largura total, reseta para manter o loop perfeito
+  //     if (x >= container.scrollWidth / 2) {
+  //       x = 0;
+  //     }
+
+  //     requestAnimationFrame(move);
+  //   };
+
+  //   move();
+  // }, []);
 
   return (
     <section className="habilidades" id="habilidades">
       {/* <ArrowBigDownDash className="seta-baixo" /> */}
-      <ul>
-        {habil.then((data) =>
-          data.map((habilidade) => (
-            <li key={habilidade.slug}>
-              <Link href={`/habilidade/${habilidade.slug}`}>
-                {habilidade.nome}
-              </Link>
-            </li>
-          ))
-        )}
-        {/* <li
-          className="fullstack"
-          data-aos="fade-right"
-          data-aos-offset="300"
-          data-aos-easing="ease-in-sine"
-        >
-          <Link href="/habilidade/html-css-javascript">
-            HTML | Css3 | JavaScript
-          </Link>
-        </li>
-        <li
-          data-aos="fade-down"
-          data-aos-easing="linear"
-          data-aos-duration="1500"
-          data-aos-offset="300"
-        >
-          <Link href="/habilidade/php">PHP</Link>
-        </li>
-        <li
-          data-aos="fade-right"
-          data-aos-offset="300"
-          data-aos-easing="ease-in-sine"
-        >
-          React.js | React.ts
-        </li>
-        <li
-          data-aos="fade-down"
-          data-aos-easing="linear"
-          data-aos-duration="1500"
-          data-aos-offset="300"
-        >
-          Banco de Dados (MySQL)
-        </li>
-        <li
-          data-aos="fade-right"
-          data-aos-offset="200"
-          data-aos-easing="ease-in-sine"
-        >
-          Versionamento (Git)
-        </li>
-        <li
-          data-aos="fade-down"
-          data-aos-easing="linear"
-          data-aos-duration="1500"
-          data-aos-offset="200"
-        >
-          Linguangem C
-        </li> */}
-      </ul>
+      <h2>Habilidades</h2>
+      <CardHabilidade />
     </section>
   );
 }
