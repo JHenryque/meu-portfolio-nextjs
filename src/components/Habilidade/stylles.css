@@ -47,7 +47,7 @@ h2 {
   justify-content: center;
   margin-top: 3rem;
   position: absolute;
-  top: 70px;
+  top: 120px;
   left: 30%;
 }
 
@@ -55,7 +55,7 @@ h2 {
   background: var(--container-bg);
   padding: 1rem 2rem;
   border-radius: 0.5rem;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(247, 247, 247, 0.664);
   font-size: 1.2rem;
   color: var(--text-color);
   font-weight: 500;
@@ -64,7 +64,7 @@ h2 {
 }
 .habilidades ul li:hover {
   transform: translateY(-5px);
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.445);
 }
 
 .habilidades ul li {
@@ -74,9 +74,6 @@ h2 {
 .habilidades ul {
   max-width: 600px;
   margin: 0 auto;
-}
-.habilidades {
-  padding: 4rem 1rem;
 }
 .habilidades ul li {
   width: auto;
