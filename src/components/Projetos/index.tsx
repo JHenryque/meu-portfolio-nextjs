@@ -1,11 +1,24 @@
 import Link from "next/link";
 import "./stylles.css";
 import { JsonPostRepository } from "@/repositories/json.post.repository";
+import Image from "next/image";
+import { EmblaOptionsType } from "embla-carousel";
+import Autoplay from "embla-carousel-autoplay";
+import useEmblaCarousel from "embla-carousel-react";
 
-export default function Projetos() {
+type PropType = {
+  slides: number[];
+  options?: EmblaOptionsType;
+};
+
+export default function Projetos({ ...props }: PropType) {
   const projetos = new JsonPostRepository().findAllProjetos();
+
+  const { slides, options } = props;
+  const [emblaRef, emblaApi] = useEmblaCarousel(options, [Autoplay()]);
+
   return (
-    <div className="projetos-container">
+    <div className="projetos-container" ref={emblaRef}>
       <h1 id="projetos">Projetos</h1>
 
       {projetos.then((data) =>
@@ -14,7 +27,7 @@ export default function Projetos() {
             <Link href={`/projetos/${projeto.slug}`}>
               {projeto.titulo}
               <p>{projeto.descricao}</p>
-              <img src={projeto.imagem} alt={projeto.titulo} />
+              <Image src={projeto.imagem} alt={projeto.titulo} />
             </Link>
           </div>
         ))

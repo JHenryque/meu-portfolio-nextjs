@@ -34,20 +34,3 @@ div {
 .projetos-container li {
   margin-bottom: 10px;
 }
-.projetos-container img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin-top: 10px;
-}
-.projetos-container strong {
-  font-weight: bold;
-}
-.projetos-container em {
-  font-style: italic;
-}
-.projetos-container hr {
-  margin: 20px 0;
-  border: none;
-  border-top: 1px solid #eaeaea;
-}
