@@ -11,8 +11,8 @@ export default function LayoutApp() {
     <>
       <Banner />
       <SobreMi />
+      <Habilidade />
       <Suspense fallback={<Loading />}>
-        <Habilidade />
         <Projetos />
       </Suspense>
       <Contato />
