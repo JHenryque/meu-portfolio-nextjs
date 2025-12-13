@@ -1,18 +1,34 @@
 //import { JsonPostRepository } from "@/repositories/json.post.repository";
-import Link from "next/link";
-import post from "../../db/seed/posts.json";
 
-export default function CardHabilidade({ ...props }) {
+import { EmblaOptionsType } from "embla-carousel";
+import Autoplay from "embla-carousel-autoplay";
+import useEmblaCarousel from "embla-carousel-react";
+
+type PropType = {
+  slides: { nome: string; slug: string }[];
+  options?: EmblaOptionsType;
+};
+
+export default function CardHabilidade({
+  slides,
+  options,
+  ...props
+}: PropType) {
   //const habil = new JsonPostRepository().findAllHabilidades();
 
   //await new Promise((resolve) => setTimeout(resolve, 1000));
   // init Swiper:
 
+  //const { slides, options } = props;
+  const [emblaRef, emblaApi] = useEmblaCarousel(options, [Autoplay()]);
+
+  console.log(emblaRef);
+
   return (
-    <ul id="habil" {...props}>
-      {post.post.habilidades.map((data) => (
+    <ul id="habil" {...props} ref={emblaRef}>
+      {slides.map((data) => (
         <li key={data.slug} className="card-habilidade">
-          <Link href={`/data/${data.slug}`}>{data.nome}</Link>
+          {data.nome}
         </li>
       ))}
     </ul>
